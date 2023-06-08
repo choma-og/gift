@@ -33,7 +33,7 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home__data`, {origin: 'top', delay:400})
 sr.reveal(`.home__img`, {origin: 'bottom', delay:600})
-sr.reveal(`.progress__wrapper`, {origin: 'left', delay:800})
+sr.reveal(`.progres__wrapper`, {origin: 'left', delay:800})
 
 
 let number = document.getElementById("output").innerHTML = Math.floor(Math.random() * 70) + 30;
@@ -59,20 +59,20 @@ function countTo() {
 }
 countTo();
 
-let circuleProgress = document.querySelector(".progress__circular");
-    progressValue = document.querySelector(".progress__value");
+let circuleProgres = document.querySelector(".progres__circular");
+    progresValue = document.querySelector(".progres__value");
 
-let progressStartValue = 0;
-    progressEndValue = 100;
-    speed = 100;
+let progresStartValue = 0;
+    progresEndValue = 100;
+    speed = 2000;
 
-let progress = setInterval(() => {
-  progressStartValue++;
-  progressValue.textContent = `${progressStartValue}%`
-  circuleProgress.style.background = `conic-gradient(#ff00c4 ${progressStartValue * 3.6}deg, #ededed 0deg)`
+let progres = setInterval(() => {
+  progresStartValue++;
+  progresValue.textContent = `${progresStartValue}%`
+  circuleProgres.style.background = `conic-gradient(#ff00c4 ${progresStartValue * 3.6}deg, #ededed 0deg)`
 
-  if(progressStartValue == progressEndValue) {
-    clearInterval(progress);
+  if(progresStartValue == progresEndValue) {
+    clearInterval(progres);
   }
 
 }, speed);
@@ -165,11 +165,9 @@ submitBtn.addEventListener('click', () => {
     }else {
       quiz.innerHTML = 
       `
-
       <h2 class="quiz__title">You have answered ${quizData.length} out ${quizData.length} questions!</h2>
-      <img class="quiz__gift" width: 250px; src="../img/gift.png" alt="Подарок">
+      <img class="quiz__gift" width: 250px; src="../img/gift.jpg" alt="Подарок">
       <button class="send__btn">Забрать подарок</button> 
-
       `
     }
   }

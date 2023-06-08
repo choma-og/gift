@@ -138,14 +138,14 @@ img {
 /*=============== HOME ===============*/
 .home {
   background-color: var(--first-color);
-  padding: 7rem 0 1.5rem;
+  padding: 4rem 0 1rem;
   /* height: 100vh; */
   display: grid;
 }
 .home__container {
   display: grid;
   align-content: center;
-  row-gap: 1.5rem;
+  row-gap: 1.rem;
 }
 .home__data {
   text-align: center;
@@ -195,7 +195,7 @@ img {
   animation: floaty 1.8s infinite alternate;
 }
 .home__img {
-  margin-top: -2rem;
+  margin-top: -1rem;
   justify-self: center;
 }
 .home__shadow {
@@ -226,7 +226,7 @@ img {
 #output {
   margin-left: 5px;
 }
-/* Animate ghost */
+/* Animate iphone */
 @keyframes floaty{
   0%{
     transform: translateY(0);
@@ -245,23 +245,19 @@ img {
 }
 
 /* ===================================== */
-.progress {
-}
-.procress__container {
+.progres__container {
   display: flex;
   justify-content: center;
  
 }
-.container {
-}
-.progress__wrapper {
+.progres__wrapper {
   display: flex;
   padding: 0;
   row-gap: 15px;
   column-gap: 15px;
   align-items: center;
 }
-.progress__circular {
+.progres__circular {
   position: relative;
   height: 80px;
   width: 80px;
@@ -271,7 +267,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-.progress__circular::before {
+.progres__circular::before {
   content: "";
   position: absolute;
   height: 60px;
@@ -279,7 +275,7 @@ img {
   border-radius: 50%;
   background-color: #fff;
 }
-.progress__value {
+.progres__value {
   position: relative;
   font-size: 23px;
 }
@@ -295,101 +291,7 @@ img {
   color: black;
   max-width: 700px;
 }
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
-@media screen and (max-width: 320px){
-  .home{
-    padding-top: 7rem;
-  }
-}
-@media screen and (max-width: 1048px){
-  .procress__container {
-
-  }
-}
-/* For medium devices */
-@media screen and (min-width: 767px){
-  .nav{
-    height: calc(var(--header-height) + 1.5rem);
-  }
-  .nav__toggle,
-  .nav__close{
-    display: none;
-  }
-  .nav__list {
-    flex-direction: row;
-    column-gap: 3.5rem;
-  }
-}
-
-/* For large devices */
-@media screen and (min-width: 800px){
-  .home__container{
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    column-gap: 2rem;
-  }
-  .home__box {
-    flex-direction:row;
-    column-gap: 10px;
-    margin-top: 2rem;
-  }
-  .home__data{
-    text-align: initial;
-  }
-  .home__img img{
-    width: 400px;
-  }
-  .home__shadow{
-    width: 250px;
-    height: 40px;
-  }
-  .progress__wrapper {
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    padding: 0 0 0 6rem;
-  }
-  .home {
-    background-color: var(--first-color);
-    padding: 12rem 0 4rem;
-  }
-}
-@media screen and (min-width: 1048px) {
-  .container{
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-}
-@media screen and (max-width: 800px){
-  .home__title {
-    font-size: var(--big-font-size);
-  }
-  .quiz__title {
-    font-size: 24px;
-    margin-top: 10px;
-  }
-}
-/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
-@media screen and (min-width:2048px){
-  body{
-    zoom: 1.7;
-  }
-  .home{
-    height: initial;
-    row-gap: 4rem;
-  }
-}
-/* For 4K resolutions (3840 x 2160, 4096 x 2160) */
-@media screen and (min-width: 3840px) {
-  body{
-    zoom: 3.1;
-  }
-}
-
+/* ============== POPUPS ==================== */
 .popup._active {
   display: block;
 } 
@@ -474,15 +376,13 @@ img {
   align-self: center;
   width: 250px;
 }
-/* ================POP UP MEDIA=================== */
-@media (max-width:1024px) {
-  .popup__content {
-    padding: 40px;
-    width: 711px;
-    height: 522px;
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 320px){
+  .home{
+    padding-top: 7rem;
   }
 }
-@media (max-width:760px) {
+@media screen and (max-width:760px) {
   .popup__title {
     font-size: 25px;
     margin-bottom: 24px;
@@ -493,5 +393,88 @@ img {
     width: 500px;
     height: 486px;
     padding: 24px;
+  }
+}
+@media screen and (min-width: 767px){
+  .nav{
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav__toggle,
+  .nav__close{
+    display: none;
+  }
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3.5rem;
+  }
+}
+@media screen and (min-width: 800px){
+  .home__container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+  }
+  .home__box {
+    flex-direction:row;
+    column-gap: 10px;
+    margin-top: 2rem;
+  }
+  .home__data{
+    text-align: initial;
+  }
+  .home__img img{
+    width: 400px;
+  }
+  .home__shadow{
+    width: 250px;
+    height: 40px;
+  }
+  .progres__wrapper {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 0 0 0 6rem;
+  }
+  .home {
+    background-color: var(--first-color);
+    padding: 12rem 0 4rem;
+  }
+}
+@media screen and (min-width: 1048px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width:2048px){
+  body{
+    zoom: 1.7;
+  }
+  .home{
+    height: initial;
+    row-gap: 4rem;
+  }
+}
+@media screen and (min-width: 3840px){
+  body{
+    zoom: 3.1;
+  }
+}
+@media screen and (max-width: 800px){
+  .home__title {
+    font-size: var(--big-font-size);
+  }
+  .quiz__title {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width:1024px){
+  .popup__content {
+    padding: 40px;
+    width: 711px;
+    height: 522px;
   }
 }

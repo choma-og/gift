@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Responsive 404 website - choma</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                apple.
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Магазин</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Mac</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">iPad</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">iPhone</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Watch</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Поддержка</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home">
+            <div class="home__container container">
+                <div class="home__data">
+                        <span class="home__subtitle">Розыгрыш</span>
+                        <h1 class="home__title">Iphone 14</h1>
+                        <p class="home__description">100 Ценных призов от Apple <br> Только для жителей России</p>
+                        <div class="home__box">
+                            <a id="home__button" href="#" class="home__button">Испытай свою удачу!</a>
+                            <span class="home__residue">Осталось:<span id="output"></span></span>
+                        </div>
+                </div>
+                <div class="home__img">
+                        <img src="img/1.png" alt="">
+                        <div class="home__shadow"></div>
+                </div>
+            </div>
+        </section>
+        <div class="procress__container container">
+            <div class="progress__wrapper">
+                <div class="progress__circular">
+                    <span class="progress__value">0%</span>
+                </div>
+                <a id="home__button-second" href="#" class="home__button">Пройти опрос</a>
+            </div>
+        </div>
+    </main>
+      <div id="popup" class="popup">
+        <div class="popup__body">
+          <div class="popup__content">
+            <a id="popup__close" href="#" class="popup__close">
+                <img src="img/x.svg" alt="закрыть попап">
+            </a>
+            <div class="popup__wrapper" id="quiz">
+                <h2 id="question" class="quiz__title">Question Text</h2>
+                <div class="quiz__box">
+                    <ul class="quiz__list">
+                        <li class="quiz__item">
+                            <input type="radio" name="answer" id="a" class="answer">
+                            <label for="a" id="a_text">Answer</label>
+                        </li>
+                        <li class="quiz__item">
+                            <input type="radio" name="answer" id="b" class="answer">
+                            <label for="b" id="b_text">Answer</label>
+                        </li>
+                    </ul>
+                </div>
+                <button class="send__btn" id="submit">Ответить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>

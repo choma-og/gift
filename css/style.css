@@ -60,8 +60,8 @@ img {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .main {
@@ -138,14 +138,14 @@ img {
 /*=============== HOME ===============*/
 .home {
   background-color: var(--first-color);
-  padding: 4rem 0 1rem;
+  padding: 7rem 0 1rem;
   /* height: 100vh; */
   display: grid;
 }
 .home__container {
   display: grid;
   align-content: center;
-  row-gap: 1.rem;
+  row-gap: 1rem;
 }
 .home__data {
   text-align: center;
@@ -478,12 +478,22 @@ img {
     height: 522px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 376px) {
   #home__button-second {
     display: none;
   }
   .progres__wrapper  {
-    top: 265px;
+    top: 310px;
+    position: absolute;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #home__button-second {
+    display: none;
+  }
+  .progres__wrapper  {
+    top: 310px;
     position: absolute;
     left: 20px;
   }

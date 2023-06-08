@@ -177,7 +177,7 @@ img {
 
 .home__title {
   font-size: var(--biggest-font-size);
-  margin: .75rem 0;
+  margin: 0 0 .75rem 0;
 }
 .home__button {
   display: inline-block;
@@ -476,5 +476,15 @@ img {
     padding: 40px;
     width: 711px;
     height: 522px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #home__button-second {
+    display: none;
+  }
+  .progres__wrapper  {
+    top: 265px;
+    position: absolute;
+    left: 20px;
   }
 }
